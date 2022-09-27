@@ -1,6 +1,7 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class TestMyCalculator {
     private final Calculator calculator = new Calculator();
@@ -23,5 +24,10 @@ public class TestMyCalculator {
     @Test
     void division() {
         assertEquals(2, calculator.add(4, 2));
+    }
+
+    @Test
+    void divisionParZero() {
+        assertThrows(IllegalArgumentException.class, () -> calculator.div(4, 0));
     }
 }
