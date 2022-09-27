@@ -1,0 +1,13 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/cheikhoul/Desktop/LiveCampus/Test et déploiement/tp_test/lib/*.jar"
+    ],
+    "java.test.config": {
+        "name": "myTestConfiguuration",
+        "vmArgs": ["-Xmx512M"],
+        "env": {"key": "value"}
+    }
+}

@@ -18,7 +18,8 @@ public class Calculator {
         if (terme2 == 0) {
             throw new IllegalArgumentException();
         }
-        int qt = terme1/terme2;
+        int qt = terme1 / terme2;
         return qt; 
     }
 }
+	
